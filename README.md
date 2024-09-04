@@ -4,11 +4,16 @@ The podcast search engine allows users to find relevant podcast episodes that di
 
 Users can either put in the exact term they are looking for, or make a request in natural language under the activation of the OpenAI Query Optimization. 
 
-Users can pick between **30 seconds**, **2 minute** and **5 minute** podcast clips.
-
+Users can pick between **30 seconds**, **2 minutes** and **5 minutes** podcast clips.
 
 ## Demo
 ![Search Engine Demo](https://github.com/kolya-krafeld/podcast_search_engine/assets/91055239/9c00a347-a9f5-4f3c-a0b9-179ac72d92e4)
+
+## Report
+[Report with our main findings, detailed implementation and experiments](https://github.com/user-attachments/files/16875755/Search_Engine___Podcast_Search.pdf)
+
+## System design 
+<img width="1000" src="https://github.com/user-attachments/assets/9ebc6ffa-3370-4e09-bc3a-5cef4a0ee04b">
 
 ## Features
 
@@ -16,8 +21,8 @@ Users can pick between **30 seconds**, **2 minute** and **5 minute** podcast cli
 
 Clicking the Settings icon ⚙️ in the search bar the user can choose between multiple settings of the search engine:
 - **Show scores**: Shows the tf_idf score for each podcast clip in the UI.
-- **Use OpenAI Query Optimization**: Resolves the query by calling a OpenAI API and improving the query. This allows users to ask requests in natural language form, e.g. `Recommend me something about Kendrick`. It can increase the query time because the OpenAPI needs to be called.
-- **Number of search results**: Number of relevant podcast clips that will be shown. Up to 50. The clips are grouped together by episode, therefore there might be less episodes visible than clips.
+- **Use OpenAI Query Optimization**: Resolves the query by calling an OpenAI API and improving the query. This allows users to ask requests in natural language form, e.g. `Recommend me something about Kendrick`. It can increase the query time because the OpenAPI needs to be called.
+- **Number of search results**: Number of relevant podcast clips that will be shown. Up to 50. The clips are grouped by episode, therefore there might be fewer episodes visible than clips.
 
 ### Boolean Search  
 
